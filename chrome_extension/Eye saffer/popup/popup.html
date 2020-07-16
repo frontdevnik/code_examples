@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <label for="beforeWarmupTime">
+      Set the desired time interval between warmups(min):
+    </label>
+    <input type="number" id="beforeWarmupTime" min="0" max="300" value="60"/>
+    <label for="warnAboutWarmup">
+      Warn about warm-up time(min):
+    </label>
+    <input type="number" id="warnAboutWarmup" min="0" max="60" value="5"/>
+    <label for="warmupTime">
+      Set the warm up time(sec):
+    </label>
+    <input type="number" id="warmupTime" min="0" max="999" value="30"/>
+    <button type="submit" id="save">Save Changes</button>
+
+    <h1>Next warmup in: </h1>
+    <h2 id="counter"></h2>
+    <button id="stopCounter">STOP COUNTER</button>
+    <button id="startCounter">START COUNTER</button>
+    <button id="resetCounter">RESET COUNTER</button>
+    <script src="./popup.js"></script>
+  </body>
+</html>

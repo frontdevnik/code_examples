@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  cursor: none;
+}
+
+h1 {
+  text-align: center;
+  line-height: 100vh;
+  text-transform: uppercase;
+  color: #e2e2e2;
+  font-size: 26px;
+}

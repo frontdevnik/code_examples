@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "Eye saffer",
+    "description": "The extension reminds you to warm up your eyes. All intervals can be customized",
+    "browser_action": {
+      "default_icons": {
+        "16": "./images/default_icon.ico",
+        "32": "./images/default_icon.ico"
+      },
+      "default_title": "Show warmup settings",
+      "default_popup": "./popup/popup.html"
+    },
+    "icons": {
+      "16": "./images/pen.png",
+      "32": "./images/pen.png",
+      "64": "./images/pen.png"
+    },
+    "permissions": ["tabs", "storage", "notifications"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "web_accessible_resources": [ "warmup/index.js" ]
+  }
