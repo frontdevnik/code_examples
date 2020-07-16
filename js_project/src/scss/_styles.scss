@@ -1,0 +1,594 @@
+// ------------------------- Header --------------------------
+
+.head__navigation {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+
+  #burger,
+  #burgerIcon {
+    display: none;
+  }
+
+  .burger__line {
+    display: block;
+    margin-top: 5px;
+    width: 30px;
+    height: 4px;
+    background-color: #4d4c49;
+    border-radius: 7px;
+  }
+}
+
+.head__caption {
+  font-family: "Hind Siliguri Bold", sans-serif;
+  color: #4d4c49;
+  font-size: 17px;
+}
+
+.navbar {
+  margin-right: 0;
+
+  &__item {
+    font-family: "Hind Siliguri", sans-serif;
+    line-height: 25px;
+    color: #4d4949;
+    font-size: 15px;
+
+    &:not(:last-child) {
+      margin-right: 37px;
+    }
+  }
+
+  .active {
+    font-weight: 900;
+    text-decoration: underline;
+  }
+}
+
+// ------------------------- Buttons --------------------------
+
+.btn {
+  padding: 10px 26px;
+  height: 45px;
+  font-size: 15px;
+
+  &:hover {
+    background-color: #393737;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.btn--black {
+  border: none;
+  border-radius: 5px;
+  background-color: $btn-dark-bg;
+  color: #fff;
+}
+
+.btn--white {
+  border-radius: 5px;
+  border: 1px solid #4d4949;
+  background-color: transparent;
+}
+
+// ------------------------- Heading --------------------------
+
+.heading {
+  font-family: "Hind Siliguri", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0 61px 0;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+    margin-bottom: 2.5px;
+  }
+
+  &__figure {
+    position: relative;
+    width: 95px;
+    height: 8px;
+    border-right: 1px solid #4d4949;
+    border-bottom: 1px solid #4d4949;
+    border-left: 1px solid #4d4949;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: -3px;
+      top: 0;
+      background: #4d4949;
+      width: 3px;
+      height: 1px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      right: -3px;
+      top: 0;
+      background: #4d4949;
+      width: 3px;
+      height: 1px;
+    }
+  }
+
+  &__text {
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 14.5px;
+    max-width: 442px;
+  }
+}
+
+// ------------------------- Video-button -----------------------
+
+.video__button {
+  position: absolute;
+  content: '';
+  top: calc(50% - 36px);
+  left: calc(50% - 26px);
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  background: rgba(77, 73, 73, 0.7);
+  z-index: 999;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: calc(50% - 18px);
+    left: calc(50% - 8px);
+    width: 0;
+    height: 0;
+    border-radius: 4px;
+    border: 18px solid transparent;
+    border-left: 23px solid #fff;
+  }
+}
+
+// ------------------------- Contact-links ----------------------
+
+.contact__links {
+  display: flex;
+  justify-content: space-between;
+  width: 112px;
+  padding-top: 23px;
+
+  .link__fb {
+    background: url('../img/css_sprites.png') -53px -75px;
+    height: 23px;
+    width: 14px;
+  }
+
+  .link__inst {
+    background: url('../img/css_sprites.png') -10px -75px;
+    height: 23px;
+    width: 23px;
+  }
+
+  .link__drib {
+    background: url('../img/css_sprites.png') -75px -10px;
+    height: 23px;
+    width: 23px;
+  }
+}
+
+// ------------------------- post-info --------------------------
+
+.comment {
+  width: 100%;
+
+  &__img {
+    float: left;
+    margin-right: 15px;
+    max-width: 54px;
+    max-height: 54px;
+  }
+
+  &__name {
+    color: #4d4949;
+    font-weight: 900;
+  }
+
+  .post__views {
+    margin-left: 21px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: url('../img/css_sprites.png') -118px -84px;
+      left: -18px;
+      top: 5px;
+      width: 14px;
+      height: 13px;
+    }
+  }
+
+  .post-info {
+    font-family: "Hind Siliguri", sans-serif;
+    font-size: 15px;
+    color: #818181;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+
+    span {
+      margin-right: 7px;
+    }
+
+    .post__rate {
+      display: flex;
+      margin-left: 8px;
+
+      .rate__star {
+        width: 14px;
+        height: 14px;
+        background-color: #d8d8d8;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        margin-right: 3px;
+      }
+
+      .painted {
+        background-color: #deee23;
+      }
+
+      .half-painted {
+        border-left: 6.5px solid #deee23;
+      }
+    }
+  }
+}
+
+// ------------------------- Scroll Top ----------------------
+
+.scroll_top {
+  position: sticky;
+  top: 90vh;
+  left: 90%;
+  z-index: 9999;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #4d4949;
+  display: block;
+  background: url('../img/css_sprites.png') -3px -106px no-repeat;
+  border-radius: 5px;
+  transform: rotateZ(-180deg);
+}
+
+// ------------------------- Modal error ---------------------------
+
+.modal-error {
+  position: absolute;
+  z-index: 999999;
+  top: -120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #564F56;
+  transition: 1s top;
+}
+
+.modal-error__container {
+  width: 80%;
+  height: 80px;
+  background: rgb(248, 113, 136);
+  max-width: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// ------------------------- Footer --------------------------
+
+.footer {
+  min-height: 71px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact__links {
+    padding: 0;
+  }
+
+  &__caption {
+    font-family: "Hind Siliguri Bold", sans-serif;
+    color: #4d4c49;
+    font-size: 17px;
+    margin-left: 60px;
+  }
+}
+
+// ------------------------ Modal Dialog ---------------------
+
+.modal {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  right: 0;
+  // bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  top: -100vh;
+  opacity: 0;
+  height: 100%;
+  transition: 0.5s all;
+
+  &:target {
+    top: 0;
+    opacity: 1;
+  }
+
+  &__container {
+    width: 550px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: linear-gradient(#fff, #999);
+  }
+
+  .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+
+    &:hover {
+      background: #F34756; 
+    }
+  }
+}
+
+.add-post {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    align-self: center;
+  }
+}
+
+.form {
+  width: 500px;
+
+  .btn {
+    float: right;
+  }
+}
+
+.form__item {
+  height: auto;
+  min-height: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  input {
+    height: 25px;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+  }
+}
+
+.post-desc {
+  align-self: flex-start;
+}
+
+#postDesc {
+  height: 125px;
+  width: 70%;
+}
+
+#postType {
+  width: 60%;
+  margin-right: 10%;
+}
+
+// Modal dialog from jQuery plugin 
+
+.simpleModal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999999;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+
+  &-body {
+    position: relative;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 520px;
+    min-width: 320px;
+    height: auto;
+    margin: auto;
+    top: calc(50% - 230px);
+  }
+
+  &__title {
+  	padding: 0.4em;
+  	text-align: center;
+  	font-size: 2.4em;
+  	background: rgba(0,0,0,0.1);
+    border-radius: 3px 3px 0 0;
+    color: #ddd;
+  }
+
+  &__buttons {
+  	padding: 0.4em 1.2em;
+  	text-align: center;
+  	background: rgba(0,0,0,0.1);
+  	border-radius: 3px 3px 0 0;
+  }
+
+  &__button {
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    padding: 0.6em 1.2em;
+    margin-left: 1.3em;
+    background: #373C4E;
+    float: right;
+  }
+
+  &__text {
+		padding: 30px 40px 30px;
+		font-size: 1.5em;
+		background: #b8b8b8;
+		height: 100%;
+		display: flex;
+		align-items: center;
+  }
+
+  &__change {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hue($color: #000000);
+  }
+
+  &__description {
+    font-size: 26px;
+  }
+
+  &__textarea {
+    width: 85%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  &__close {
+    position: absolute;
+    cursor: pointer;
+    right: -10px;
+    top: -10px;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    transition: transform 600ms;
+
+    &:hover {
+      transform: rotate(360deg) scale(1.2);
+      transition: transform 600ms;
+    }
+
+    &::before {
+      width: 15px;
+	  	height: 2px;
+	  	right: 4.5px;
+	  	background: black;
+	  	content: '';
+	  	position: absolute;
+	  	transform: rotate(45deg);
+    }
+
+    &::after {
+      width: 15px;
+	  	height: 2px;
+	  	right: 4.5px;
+	  	background: black;
+	  	content: '';
+	  	position: absolute;
+	  	transform: rotate(-45deg);
+    }
+  }
+}
+
+.blur-it {
+  filter: blur(4px);
+}
+
+@media screen and (max-width: 600px) {
+  .head {
+    &__navigation {
+      #burgerIcon {
+        display: block;
+      }
+
+      .navbar {
+        display: none;
+
+        &__item {
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      #burger:checked + .navbar {
+        position: absolute;
+        top: 70px;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+    }
+  }
+
+  .video__button {
+    top: calc(50% - 16px);
+  }
+
+  .form {
+    .btn {
+      float: left;
+    }
+  }
+
+  .form__item {
+    flex-direction: column;
+    align-items: flex-start;
+
+    input {
+      width: 70%;
+    }
+  }
+
+  .footer {
+    &__content {
+      justify-content: center;
+    }
+
+    &__caption {
+      margin-left: 10px;
+    }
+  }
+}

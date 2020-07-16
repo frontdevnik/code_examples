@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Movies /> click on title should redirect 1`] = `
+"<section className=\\"movies\\">
+  <article className=\\"movie\\">
+    <img className=\\"img\\" src=\\"posterUrl\\" alt=\\"Title\\" />
+    <h2 className=\\"title\\" onClick={[Function: onClick]}>
+      Title
+    </h2>
+    <Connect(Likes) likes=\\"3\\" id={1} movie={{...}} />
+    <RatingStart stars=\\"4\\" id={1} movie={{...}} />
+  </article>
+</section>"
+`;
+
+exports[`<Movies /> should render correctly 1`] = `
+"<section className=\\"movies\\">
+  <article className=\\"movie\\">
+    <img className=\\"img\\" src=\\"posterUrl\\" alt=\\"Title\\" />
+    <h2 className=\\"title\\" onClick={[Function: onClick]}>
+      Title
+    </h2>
+    <Connect(Likes) likes=\\"3\\" id={1} movie={{...}} />
+    <RatingStart stars=\\"4\\" id={1} movie={{...}} />
+  </article>
+</section>"
+`;
+
+exports[`<Movies /> should render correctly 2`] = `
+"<section className=\\"movies\\">
+  <article className=\\"movie\\">
+    <img className=\\"img\\" src=\\"posterUrl\\" alt=\\"Title\\" />
+    <h2 className=\\"title\\" onClick={[Function: onClick]}>
+      Title
+    </h2>
+    <Connect(Likes) likes=\\"3\\" id={1} movie={{...}} />
+    <RatingStart stars=\\"4\\" id={1} movie={{...}} />
+  </article>
+</section>"
+`;
+
+exports[`<Movies /> should render error 1`] = `"<h1 style=\\"text-align:center\\">Sorry, the service is not available now, try visiting later</h1>"`;
+
+exports[`<Movies /> should render loading 1`] = `"<div class=\\"loader\\"><span>Loading...</span></div>"`;
+
+exports[`<Movies /> title on click should redirect 1`] = `
+"<section className=\\"movies\\">
+  <article className=\\"movie\\">
+    <img className=\\"img\\" src=\\"posterUrl\\" alt=\\"Title\\" />
+    <h2 className=\\"title\\" onClick={[Function: onClick]}>
+      Title
+    </h2>
+    <Connect(Likes) likes=\\"3\\" id={1} movie={{...}} />
+    <RatingStart stars=\\"4\\" id={1} movie={{...}} />
+  </article>
+</section>"
+`;

@@ -1,0 +1,6 @@
+export const CHOOSE_FILM = 'CHOOSE_FILM';
+export const FETCHING_MOVIES = 'FETCHING_MOVIES';
+export const LOADING_MOVIES = 'LOADING_MOVIES';
+export const ERROR_MOVIES = 'ERROR_MOVIES';
+export const GET_ACTORS = 'GET_ACTORS';
+export const ACTORS_ERROR = 'ACTORS_ERROR';

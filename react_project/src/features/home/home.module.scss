@@ -1,0 +1,32 @@
+* {
+  font-family: 'Lacquer', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%) no-repeat;
+}
+
+.films {
+  margin: 0 auto;
+  width: 75%;
+  padding: 10px;
+}
+
+@media all and (min-width: 1480px) {
+  .films {
+    width: 1044px;
+  }
+}
+
+@media all and (max-width: 1480px) {
+  .films {
+    width: 720px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .films {
+    width: 370px;
+  }
+}

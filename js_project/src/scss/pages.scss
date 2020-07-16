@@ -1,0 +1,530 @@
+@import 'reset';
+@import 'normalize';
+
+// Bootstrap
+
+@import 'bootstrap-override';
+@import 'variables';
+@import 'mixins';
+@import 'scaffolding';
+@import 'grid';
+@import '_typography';
+@import '_vars';
+@import '_colours-matrix';
+@import 'styles';
+
+.head__title {
+  @include make-lg-column(7);
+  @include make-row;
+
+  font-size: 28px;
+  margin-top: 72px;
+  margin-bottom: 25px;
+  line-height: 37px;
+  letter-spacing: 0.5px;
+}
+
+.main {
+  .container {
+    padding: 0;
+  }
+
+  &__content {
+    @include make-md-column(7);
+    @include make-lg-column(7);
+  }
+
+  &__picture {
+    margin-top: 19px;
+    margin-bottom: 15px;
+    max-width: 661px;
+    max-height: 447px;
+    width: calc(100% + 25px);
+  }
+
+  &__audio {
+    margin-bottom: 10px;
+    max-width: 300px;
+    width: 90%;
+  }
+
+  &__paragraph {
+    font-family: "Hind Siliguri", sans-serif;
+    margin-bottom: 20px;
+    color: #4d4949;
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+.trends {
+  font-family: "Hind Siliguri", sans-serif;
+  color: #4d4949;
+
+  &__caption {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 39px;
+    margin: 35px 0 10px 0;
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 20px;
+
+    u {
+      font-weight: bolder;
+      cursor: pointer;
+    }
+  }
+
+  &__quote {
+    padding: 8px 0 8px 26px;
+    border-left: 5px solid #e6e6e6;
+    font-size: 16.7px;
+    font-weight: 300;
+    line-height: 26px;
+    width: 80%;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+.article__review {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+
+  #like {
+    display: none;
+  }
+
+  .article__like {
+    display: block;
+    width: 85px;
+    height: 24px;
+    line-height: 30px;
+    background: url('../img/a-icon-like-active.svg') left center no-repeat;
+    position: relative;
+    font-size: 15px;
+    color: #4d4949;
+    text-align: right;
+
+    &:hover {
+    background: url('../img/a-icon-like-hover.svg') left center no-repeat;
+    cursor: pointer;
+    }
+  }
+
+  .contact__links {
+    padding: 0;
+    width: 118px;
+  }
+}
+
+// -------------------------- Posts -------------------------
+
+.posts {
+  @include make-md-column(5);
+  @include make-lg-column(5);
+
+  margin-top: 73px;
+  font-family: "Hind Siliguri", sans-serif;
+
+  &__content {
+    background-color: #fcf6f6;
+    padding: 30px;
+    min-height: 539px;
+
+    .btn {
+      margin-top: 28px;
+      float: right;
+    }
+  }
+
+  &__caption {
+    padding-bottom: 4px;
+    font-size: 24.4px;
+    font-weight: 600;
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+.post {
+  display: flex;
+  margin-top: 30px;
+
+  &__image {
+    float: left;
+    margin-right: 15px;
+    max-width: 160px;
+    max-height: 150px;
+    min-width: 160px;
+    min-height: 150px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span {
+      margin-right: 5px;
+    }
+
+    .post-info {
+      font-family: "Hind Siliguri", sans-serif;
+      color: #818181;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+
+  &__title {
+    display: block;
+    color: #4d4949;
+    font-family: "Hind Siliguri", sans-serif;
+    font-size: 17.4px;
+    line-height: 23px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__views {
+    margin-left: 16px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: url('../img/css_sprites.png') -118px -84px;
+      left: -18px;
+      top: 5px;
+      width: 14px;
+      height: 13px;
+    }
+  }
+}
+
+// -------------------------- Categories -------------------------
+
+.categories {
+  @include make-md-column(5);
+  @include make-lg-column(5);
+
+  margin-top: 70px;
+  font-family: "Hind Siliguri", sans-serif;
+
+  &__content {
+    background-color: #fcf6f6;
+    padding: 30px;
+    min-height: 469px;
+  }
+
+  &__caption {
+    @extend .posts__caption;
+
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    display: block;
+    color: #4d4949;
+    font-size: 17px;
+    line-height: 28px;
+    position: relative;
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      content: '';
+      right: -8px;
+      top: 0;
+      background: url('../img/css_sprites.png') -4px -110px no-repeat;
+      width: 30px;
+      height: 25px;
+    }
+  }
+
+  &__section {
+    font-family: "Hind Siliguri", sans-serif;
+    margin-top: 18px;
+    margin-left: 6px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e6e6e6;
+
+    input {
+      display: none;
+    }
+
+    input:checked ~ ul {
+      display: block;
+    }
+
+    input:checked ~ .categories__title::after {
+      transition-duration: 0.3s;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__list {
+    display: none;
+    margin: 10px 0 3px 0;
+  }
+
+  &__item {
+    color: #4d4949;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 5px;
+
+    &:hover {
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
+
+// ------------------------ Tags ----------------------
+
+.tags {
+  @include make-md-column(5);
+  @include make-lg-column(5);
+
+  margin-top: 65px;
+  font-family: "Hind Siliguri", sans-serif;
+
+  &__content {
+    background-color: #fcf6f6;
+    padding: 30px;
+    min-height: 269px;
+  }
+
+  &__caption {
+    @extend .categories__caption;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -13px;
+  }
+
+  &__link {
+    color: #4d4949;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 3px 15px;
+    border: 1px solid #4d4949;
+    border-radius: 5px;
+    margin: 0 0 17px 13px;
+
+    &:hover {
+      background-color: #4d4949;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+// ---------------------- Reviews -----------------------
+
+.reviews {
+  margin-top: 35px;
+
+  .container {
+    padding: 0;
+  }
+
+  &__content {
+    @include make-md-column(7);
+    @include make-lg-column(7);
+
+    .btn {
+      margin-left: 44%;
+      margin-top: 32px;
+    }
+  }
+
+  &__caption {
+    font-size: 25px;
+    margin-bottom: 63px;
+  }
+
+  &__image {
+    margin-right: 15px;
+    max-height: 80px;
+    max-width: 80px;
+  }
+
+  &__comment {
+    display: flex;
+    margin-bottom: 73px;
+    position: relative;
+
+    &:first-of-type {
+      &::before {
+        position: absolute;
+        z-index: -1;
+        top: -46px;
+        left: 33px;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 2px solid #ddd;
+        border-radius: 50%;
+      }
+    }
+
+    &:last-of-type {
+      &::before {
+        position: absolute;
+        z-index: -1;
+        bottom: -50px;
+        left: 33px;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 2px solid #ddd;
+        border-radius: 50%;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: -30px;
+      content: '';
+      width: 2px;
+      left: 40px;
+      height: 150%;
+      background-color: #ddd;
+    }
+
+    &__body {
+      border-radius: 5px;
+      background: #fcf6f6;
+      padding: 11px 33px 10px 21px;
+    }
+  }
+
+  &__name {
+    font-family: "Lucida Grande", sans-serif;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+
+    &--bolder {
+      font-size: 18px;
+    }
+  }
+
+  &__rate {
+    float: left;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 3px;
+
+    .rate__star {
+      width: 14px;
+      height: 14px;
+      background-color: #d8d8d8;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      margin-right: 3px;
+    }
+
+    .painted {
+      background-color: #deee23;
+    }
+
+    .half-painted {
+      border-left: 6.5px solid #deee23;
+    }
+  }
+
+  &__data {
+    float: right;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #818181;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 5px;
+      left: -20px;
+      background: url('../img/css_pages_sprites.png') -54px -54px;
+      min-width: 14px;
+      min-height: 14px;
+    }
+  }
+
+  &__text {
+    font-family: "Hind Siliguri", sans-serif;
+    float: left;
+    margin-top: 11px;
+    color: #4d4949;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  &__button {
+    font-family: "Hind Siliguri", sans-serif;
+    float: right;
+    color: #4d4949;
+    font-size: 15px;
+    margin-top: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+// --------------------- Footer --------------------
+
+.footer {
+  margin-top: 82px;
+}
+
+@media screen and (max-width: 480px) {
+  .main__picture {
+    padding-right: 20px;
+  }
+
+  .reviews__comment {
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      left: 48%;
+      height: 130%;
+    }
+
+    &:first-of-type {
+      &::before {
+        top: -46px;
+        left: 46.5%;
+      }
+    }
+
+    &:last-of-type {
+      &::before {
+        bottom: -24.5%;
+        left: 46.5%;
+      }
+    }
+
+    &__body {
+      margin-top: 20px;
+    }
+  }
+}

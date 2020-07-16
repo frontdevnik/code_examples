@@ -1,0 +1,43 @@
+.header {
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  text-align: center;
+}
+
+.active {
+  text-decoration: underline !important;
+  color: red;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.langContainer {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+.lang {
+  font-size: 14px;
+
+  &:hover {
+    cursor: pointer;
+    color: red;
+  }
+}

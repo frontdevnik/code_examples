@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Error /> should render correctly 1`] = `"<h1 style=\\"text-align:center\\">Sorry, the service is not available now, try visiting later</h1>"`;

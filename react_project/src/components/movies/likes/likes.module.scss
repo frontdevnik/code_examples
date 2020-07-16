@@ -1,0 +1,30 @@
+.likes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 30px;
+
+  &Amount {
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: aquamarine;
+  }
+}
+
+.likeButton {
+  padding: 2.3px 12px;
+  height: 24px;
+  border: none;
+  background: url('../img/like.svg');
+
+  &:hover {
+    background: url('../img/like-hover.svg');
+  }
+}
+
+.dislikeButton {
+  @extend .likeButton;
+  transform: rotate(180deg);
+}

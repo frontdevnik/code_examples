@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ActorInfo /> should render actor 1`] = `"<div class=\\"aboutActor\\"><img class=\\"profileImg\\"/><div><p class=\\"actorInfo\\"><b>Name: </b></p><p class=\\"actorInfo\\"><b>Biography: </b></p></div></div>"`;
+
+exports[`<ActorInfo /> should render error 1`] = `"<h1 style=\\"text-align:center\\">Sorry, the service is not available now, try visiting later</h1>"`;
+
+exports[`<ActorInfo /> should render loading 1`] = `"<div class=\\"loader\\"><span>Loading...</span></div>"`;

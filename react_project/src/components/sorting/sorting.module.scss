@@ -1,0 +1,27 @@
+.sorting {
+  text-align: center;
+
+  button {
+    cursor: pointer;
+    padding: 5px 7px;
+    background-color: #ccc;
+    margin: 4px 15px;
+    outline: #ccc;
+    font-weight: bold;
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+
+  button {
+    background: url('./img/search.svg');
+    margin: 0;
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../font/LibreFranklin-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Libre Franklin Bold";
+  src: url('../font/LibreFranklin-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Lucida Grande";
+  src: url("../font/LucidaGrande-Regular.ttf");
+}
+
+h1 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: 400;
+}

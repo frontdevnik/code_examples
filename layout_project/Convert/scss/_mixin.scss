@@ -1,0 +1,6 @@
+@mixin background($url) {
+  background: url($url);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(76, 76, 76, 0.35);
+}

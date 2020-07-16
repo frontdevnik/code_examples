@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> should render correctly 1`] = `
+"<section className=\\"login\\">
+  <h1 className=\\"header\\">
+    Movies
+  </h1>
+  <form className=\\"form\\">
+    <h2 className=\\"formTitle\\">
+      Login Form
+    </h2>
+    <label>
+      Input your name
+      <input id=\\"name\\" placeholder=\\"Input your name\\" />
+    </label>
+    <label>
+      Input your password
+      <input id=\\"password\\" type=\\"password\\" placeholder=\\"Input your password\\" />
+    </label>
+    <p id=\\"incorrect\\" className=\\"incorrect\\" />
+    <button onClick={[Function: mockConstructor]}>
+      Login
+    </button>
+    <p className=\\"register\\">
+      Don&#39;t have an account?
+      <Link to=\\"/registration\\">
+         
+        Go to register page
+      </Link>
+    </p>
+  </form>
+</section>"
+`;

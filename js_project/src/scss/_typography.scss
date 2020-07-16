@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Hind Siliguri";
+  src: url('../fonts/HindSiliguri-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Hind Siliguri Bold";
+  src: url('../fonts/HindSiliguri-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Hind Siliguri Medium";
+  src: url('../fonts/HindSiliguri-Medium.ttf');
+}
+
+@font-face {
+  font-family: "Lucida Grande";
+  src: url('../fonts/Lucida-Grande.ttf');
+}
+
+h1 {
+  color: #4d4949;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 1.75em;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+h2 {
+  color: #4d4949;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 39px;
+}
+
+h3 {
+  color: #4d4949;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+h4 {
+  color: #4d4949;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+h5 {
+  color: #4d4949;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}

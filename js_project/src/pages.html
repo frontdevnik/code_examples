@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pages</title>
+</head>
+<body>
+    <header class="head">
+        <div class="container">
+            <div class="head__navigation">
+                <h5 class="head__caption">BlogWorld</h5>
+                    <label for="burger" id="burgerIcon">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </label>
+                <input type="checkbox" id="burger">
+                <nav class="navbar row">
+                        <a href="#openModal" class="navbar__item">Add new post</a>
+                        <a href="index.html" class="navbar__item">Home</a>
+                        <a href="#" class="navbar__item">Portfolio</a>
+                        <a href="blog.html" class="navbar__item">Blog</a>
+                        <a href="#" class="navbar__item active">Pages</a>
+                        <a href="#" class="navbar__item">About</a>
+                        <a href="#" class="navbar__item">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="openModal" class="modal">
+        <div class="modal__container">
+            <a href="#close" title="Закрыть" class="close">X</a>
+            <div class="add-post">
+                <h2 class="add-post__title">Add post</h2>
+                <form class="form" action="#" id="form">
+                    <div class="form__item">
+                        <label for="postType">Type of posts</label>
+                        <select name="posttype" id="postType">
+                            <option value="video">Video</option>
+                            <option value="text">Text</option>
+                            <option value="audio">Audio</option>
+                            <option value="comment">Comment</option>
+                        </select>
+                    </div>
+                    <div class="form__item">
+                        <label for="postImage">Image</label>
+                        <input type="text" name="post-image" id="postImage" placeholder="Type the link to the third party resourse" required>
+                    </div>
+                    <div class="form__item">
+                        <label for="postTitle">Title</label>
+                        <input type="text" name="post-title" id="postTitle" placeholder="Title" required>
+                    </div>
+                    <div class="form__item">
+                        <label for="postAuthor">Author</label>
+                        <input type="text" name="post-author" id="postAuthor" placeholder="Author name" required>
+                    </div>
+                    <div class="form__item">
+                        <label for="postDate">Date</label>
+                        <input type="date" name="post-date" id="postDate" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="post-desc" for="postDesc">Post&nbsp;description</label>
+                        <textarea name="post-desc" id="postDesc" cols="47" rows="10" placeholder="Input description. Please separate each new paragraph with a new line"></textarea>
+                    </div>
+                    <div class="form__item">
+                        <label for="postQuote">Quote</label>
+                        <input type="text" name="post-quote" id="postQuote" placeholder="Main quote" required>
+                    </div>
+                    <input type="submit" value="Post" class="btn btn--black" id="createPost">
+                </form>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <div class="container">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+            <div class="contact__links">
+                <a href="#" class="link__fb"></a>
+                <a href="#" class="link__inst"></a>
+                <a href="#" class="link__drib"></a>
+            </div>
+            <h5 class="footer__caption">BlogWorld</h5>
+            <h5 class="footer__label">©2019 All Rights Reserved.</h5>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

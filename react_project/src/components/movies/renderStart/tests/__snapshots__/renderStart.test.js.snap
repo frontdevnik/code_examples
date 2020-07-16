@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RenderStart /> should render correctly 1`] = `"<div class=\\"starActive\\"></div><div class=\\"starActive\\"></div><div class=\\"starActive\\"></div><div class=\\"starActive\\"></div><div class=\\"starActive\\"></div>"`;

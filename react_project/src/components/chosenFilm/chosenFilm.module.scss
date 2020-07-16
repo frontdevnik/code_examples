@@ -1,0 +1,45 @@
+.shortInfo {
+  align-self: baseline;
+  position: relative;
+  min-width: 160px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+.fullInfo {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.mainImg {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 300px;
+}
+
+.buttonContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: -120px;
+}
+
+.changeButton {
+  width: 140px;
+  padding: 7px 20px;
+  margin: 10px;
+}
+
+.actor {
+  text-decoration: underline;
+  color: blue;
+  margin: 0 5px;
+
+  &:hover {
+    cursor: pointer;
+    color: red;
+  }
+}

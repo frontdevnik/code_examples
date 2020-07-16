@@ -1,0 +1,7 @@
+dist/
+src/**/styles/
+.idea/
+**/server
+**/node_modules/
+**/coverage
+*.scss

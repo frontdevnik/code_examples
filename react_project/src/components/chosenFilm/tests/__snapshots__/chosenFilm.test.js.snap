@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ChosenFilm /> should render error 1`] = `"<h1 style=\\"text-align:center\\">Sorry, the service is not available now, try visiting later</h1>"`;
+
+exports[`<ChosenFilm /> should render loading 1`] = `"<div class=\\"loader\\"><span>Loading...</span></div>"`;
+
+exports[`<ChosenFilmUI /> should render correctly 1`] = `
+"<Fragment>
+  <div className=\\"shortInfo\\">
+    <h3>
+      Title
+    </h3>
+    <p>
+      Likes
+      :
+      3
+    </p>
+    <RatingStart stars=\\"4\\" id={1} />
+    <div className=\\"buttonContainer\\">
+      <button onClick={[Function: mockConstructor]} className=\\"changeButton\\">
+        Edit
+      </button>
+      <button onClick={[Function: mockConstructor]} className=\\"changeButton\\">
+        Delete
+      </button>
+    </div>
+  </div>
+  <article className=\\"fullInfo\\">
+    <img className=\\"mainImg\\" src=\\"posterUrl\\" alt=\\"Title\\" />
+    <p>
+      <strong>
+        Director
+        : 
+      </strong>
+      Director
+    </p>
+    <p>
+      <strong>
+        Actors
+        : 
+      </strong>
+    </p>
+    <p>
+      <strong>
+        Genres
+        : 
+      </strong>
+      Genres
+    </p>
+    <p>
+      <strong>
+        Description
+        : 
+      </strong>
+      Description
+    </p>
+  </article>
+</Fragment>"
+`;
