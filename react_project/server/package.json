@@ -14,7 +14,7 @@
     "connect-pause": "^0.1.0",
     "cors": "^2.3.0",
     "errorhandler": "^1.2.0",
-    "express": "^4.9.5",
+    "express": "^4.17.3",
     "express-urlrewrite": "^1.2.0",
     "json-parse-helpfulerror": "^1.0.3",
     "json-server": "^0.12.0",
